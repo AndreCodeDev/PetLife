@@ -1,0 +1,124 @@
+@media (max-width: 1024px) {
+    .hero, .clinic, .faq {
+        flex-direction: column;
+        text-align: center;
+    }
+    
+    .hero-content, .clinic-content, .faq-content {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .hero-buttons {
+        justify-content: center;
+    }
+    
+    .hero-image, 
+    .clinic-image, 
+    .faq-image {
+        max-width: 80%;
+    }
+    
+    .pharmacy-image {
+        max-width: 90%;
+    }
+    
+    .footer {
+        gap: 2rem;
+    }
+}
+
+@media (max-width: 768px) {
+    .nav {
+        display: none;
+        position: absolute;
+        top: 100%;
+        left: 0;
+        width: 100%;
+        background-color: var(--secondary-color);
+        flex-direction: column;
+        padding: 1rem;
+        box-shadow: 0 10px 15px rgba(0,0,0,0.1);
+    }
+    
+    .nav.active {
+        display: flex;
+    }
+    
+    .mobile-menu-button {
+        display: flex;
+    }
+    
+    .mobile-menu-button.active span:nth-child(1) {
+        transform: translateY(0.65rem) rotate(45deg);
+    }
+    
+    .mobile-menu-button.active span:nth-child(2) {
+        opacity: 0;
+    }
+    
+    .mobile-menu-button.active span:nth-child(3) {
+        transform: translateY(-0.65rem) rotate(-45deg);
+    }
+    
+    .hero-title {
+        font-size: 2rem;
+    }
+    
+    .section-title {
+        font-size: 1.75rem;
+    }
+    
+    .button {
+        padding: 0.75rem 1.5rem;
+    }
+
+    .hero-image, 
+    .clinic-image, 
+    .faq-image {
+        max-width: 100%;
+    }
+    
+    .pharmacy-image {
+        max-width: 100%;
+    }
+}
+
+@media (max-width: 480px) {
+    .hero {
+        padding-top: 6rem;
+        padding-bottom: 4rem;
+    }
+    
+    .hero-title {
+        font-size: 1.75rem;
+    }
+    
+    .section-title {
+        font-size: 1.5rem;
+    }
+    
+    .hero-buttons {
+        flex-direction: column;
+        width: 100%;
+    }
+    
+    .button {
+        width: 100%;
+    }
+    
+    .footer-col {
+        min-width: 100%;
+        text-align: center;
+    }
+    
+    .footer-nav {
+        align-items: center;
+    }
+    
+    .copyright {
+        font-size: 0.8rem;
+        padding: 1rem;
+    }
+}
